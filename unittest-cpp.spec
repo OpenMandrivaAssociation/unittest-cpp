@@ -4,7 +4,7 @@
 
 Name:		unittest-cpp
 Version:	2.0.0
-Release:	%mkrel 2
+Release:	1
 Summary:	Lightweight unit testing framework for C++
 License:	MIT
 Group:		System/Libraries
