@@ -14,6 +14,7 @@ Source0:	https://github.com/unittest-cpp/unittest-cpp/releases/download/v%{versi
 Source1:	%{name}.html
 BuildRequires:	gcc-c++
 BuildRequires:	glibc-devel
+BuildRequires:  git
 
 %description
 %{name} is a lightweight unit testing framework for C++.
