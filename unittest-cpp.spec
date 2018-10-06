@@ -49,6 +49,8 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
+export CC=gcc
+export CXX=g++
 
 cp -p %{SOURCE1} .
 
