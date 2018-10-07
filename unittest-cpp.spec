@@ -57,7 +57,7 @@ export CXX=g++
 cp -p %{SOURCE1} .
 
 %build
-%configure2_5x --disable-static
+%configure
 %make_build
 
 %install
