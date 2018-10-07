@@ -3,13 +3,14 @@
 %define devname	%mklibname %{name} -d
 
 Name:		unittest-cpp
-Version:	2.0.0
+Version:	2.0.1pre
 Release:	1
 Summary:	Lightweight unit testing framework for C++
 License:	MIT
 Group:		System/Libraries
 URL:		https://github.com/unittest-cpp/unittest-cpp
-Source0:	https://github.com/unittest-cpp/unittest-cpp/releases/download/v%{version}/%{name}-%{version}.tar.gz
+#Source0:	https://github.com/unittest-cpp/unittest-cpp/releases/download/v%{version}/%{name}-%{version}.tar.gz
+Source0: https://github.com/unittest-cpp/unittest-cpp/archive/master.zip
 # documentation from 1.4 tarball: docs/UnitTest++.html
 Source1:	%{name}.html
 BuildRequires:	gcc-c++
@@ -48,9 +49,9 @@ developing applications that use %{name}.
 #----------------------------------------------------
 
 %prep
-%setup -q
-export CC=gcc
-export CXX=g++
+%setup -qn unittest-cpp-master
+#export CC=gcc
+#export CXX=g++
 
 cp -p %{SOURCE1} .
 
