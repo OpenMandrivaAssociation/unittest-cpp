@@ -10,7 +10,7 @@ License:	MIT
 Group:		System/Libraries
 URL:		https://github.com/unittest-cpp/unittest-cpp
 #Source0:	https://github.com/unittest-cpp/unittest-cpp/releases/download/v%{version}/%{name}-%{version}.tar.gz
-Source0: https://github.com/unittest-cpp/unittest-cpp/archive/master.zip
+Source0: %{name}-master.zip
 # documentation from 1.4 tarball: docs/UnitTest++.html
 Source1:	%{name}.html
 BuildRequires:	gcc-c++
