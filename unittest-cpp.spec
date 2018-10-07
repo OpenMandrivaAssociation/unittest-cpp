@@ -15,6 +15,8 @@ Source1:	%{name}.html
 BuildRequires:	gcc-c++
 BuildRequires:	glibc-devel
 BuildRequires:  git
+BuildRequires:  autoconf
+BuildRequires:  libtool
 
 %description
 %{name} is a lightweight unit testing framework for C++.
