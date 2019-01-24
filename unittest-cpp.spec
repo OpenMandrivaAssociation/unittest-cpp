@@ -12,6 +12,8 @@ URL:		https://github.com/unittest-cpp/unittest-cpp
 Source0:	https://github.com/unittest-cpp/unittest-cpp/releases/download/v%{version}/%{name}-%{version}.tar.gz
 # documentation from 1.4 tarball: docs/UnitTest++.html
 Source1:	%{name}.html
+# Patch thanks to abucodonosor aka crazy
+Patch0:   do-not-break-autoreconf.patch
 BuildRequires:	gcc-c++
 BuildRequires:	glibc-devel
 BuildRequires:  git
@@ -51,6 +53,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
+%autopatch -p1
 export CC=gcc
 export CXX=g++
 
