@@ -1,0 +1,17 @@
+(crazy) - git commands only works from the git repo
+          but breaks on all released tarballs
+          build system need some fixing but for now set
+          that value based on 'released' version
+
+diff -Naur unittest-cpp-2.0.0/configure.ac unittest-cpp-2.0.0-p/configure.ac
+--- unittest-cpp-2.0.0/configure.ac	2017-01-13 23:09:09.000000000 +0100
++++ unittest-cpp-2.0.0-p/configure.ac	2019-01-24 20:35:59.984288244 +0100
+@@ -3,7 +3,7 @@
+ 
+ AC_PREREQ([2.69])
+ AC_INIT([UnitTest++],
+-        m4_esyscmd_s([git describe --tags | cut -c2-]),
++        [2.0.0],
+         [pjohnmeyer@gmail.com],
+         [unittest-cpp])
+ 
