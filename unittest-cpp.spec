@@ -14,6 +14,10 @@ Source0:	https://github.com/unittest-cpp/unittest-cpp/releases/download/v%{versi
 Source1:	%{name}.html
 # Patch thanks to abucodonosor aka crazy
 Patch0:   do-not-break-autoreconf.patch
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gcc-c++
 BuildRequires:	glibc-devel
 BuildRequires:  git
